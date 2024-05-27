@@ -1,5 +1,5 @@
 var books = [
-    { title: "Le Petit Prince", author: "Antoine de Saint-Exupéry", file: "le_petit_prince.pdf" },
+    { title: "Dracula", author: "vampire", file: "Stocker-Dracula.pdf" },
     { title: "Les Misérables", author: "Victor Hugo", file: "les_miserables.pdf" },
     { title: "Cyrano de Bergerac", author: "Edmond Rostand", file: "cyrano_de_bergerac.pdf" },
     // Ajoute plus de livres ici
