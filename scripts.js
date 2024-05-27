@@ -22,9 +22,9 @@ function displayBooks(bookList) {
         bookAuthor.textContent = 'Auteur: ' + book.author;
 
         var bookLink = document.createElement('a');
-        bookLink.href = 'documents/' + book.file;
+        bookLink.href = 'Documents/' + book.file;
         bookLink.textContent = "Lire le document";
-        bookLink.target = "_blank"; // Ouvre le lien dans un nouvel onglet
+        // bookLink.target = "_blank"; Ouvre le lien dans un nouvel onglet
 
         bookElement.appendChild(bookTitle);
         bookElement.appendChild(bookAuthor);
