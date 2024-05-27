@@ -24,7 +24,6 @@ function displayBooks(bookList) {
         var bookLink = document.createElement('a');
         bookLink.href = 'Documents/' + book.file;
         bookLink.textContent = "Lire le document";
-        // bookLink.target = "_blank";
 
         bookElement.appendChild(bookTitle);
         bookElement.appendChild(bookAuthor);
