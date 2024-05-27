@@ -1,5 +1,5 @@
 var books = [
-    { title: "Dracula", author: "vampire", file: "Stocer-Dracula.pdf" },
+    { title: "Dracula", author: "vampire", file: "Stoker-Dracula.pdf" },
     { title: "Les Misérables", author: "Victor Hugo", file: "les_miserables.pdf" },
     { title: "Cyrano de Bergerac", author: "Edmond Rostand", file: "cyrano_de_bergerac.pdf" },
     // Ajoute plus de livres ici
