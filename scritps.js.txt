@@ -1,0 +1,39 @@
+const books = [
+    { title: "Le Petit Prince", author: "Antoine de Saint-Exupéry" },
+    { title: "Les Misérables", author: "Victor Hugo" },
+    { title: "Cyrano de Bergerac", author: "Edmond Rostand" },
+    // Ajoute plus de livres ici
+];
+
+function displayBooks(bookList) {
+    const bookListContainer = document.getElementById('book-list');
+    bookListContainer.innerHTML = '';
+
+    bookList.forEach(book => {
+        const bookElement = document.createElement('div');
+        bookElement.classList.add('book');
+        
+        const bookTitle = document.createElement('h3');
+        bookTitle.textContent = book.title;
+
+        const bookAuthor = document.createElement('p');
+        bookAuthor.textContent = `Auteur: ${book.author}`;
+
+        bookElement.appendChild(bookTitle);
+        bookElement.appendChild(bookAuthor);
+
+        bookListContainer.appendChild(bookElement);
+    });
+}
+
+document.getElementById('search-bar').addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const filteredBooks = books.filter(book => 
+        book.title.toLowerCase().includes(searchTerm) || 
+        book.author.toLowerCase().includes(searchTerm)
+    );
+    displayBooks(filteredBooks);
+});
+
+// Afficher tous les livres par défaut
+displayBooks(books);
