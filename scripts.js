@@ -1,6 +1,6 @@
 var books = [
     { title: "Déclaration grossesse", author: "Archives départementales de Nice", file: "AD_Declaration_Tourettes.pdf" },
-    { title: "Les Misérables", author: "Victor Hugo", file: "les_miserables.pdf" },
+    { title: "Procès Châtelet", author: "Archives du Châtelet de Paris", file: "Y_10224.pdf" },
     { title: "Cyrano de Bergerac", author: "Edmond Rostand", file: "cyrano_de_bergerac.pdf" },
     // Ajoute plus de livres ici
 ];
@@ -24,7 +24,7 @@ function displayBooks(bookList) {
         var bookLink = document.createElement('a');
         bookLink.href = 'Documents/' + book.file;
         bookLink.textContent = "Lire le document";
-        // bookLink.target = "_blank"; Ouvre le lien dans un nouvel onglet
+        // bookLink.target = "_blank";
 
         bookElement.appendChild(bookTitle);
         bookElement.appendChild(bookAuthor);
