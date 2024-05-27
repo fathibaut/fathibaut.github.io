@@ -1,6 +1,6 @@
 var books = [
     { title: "Déclaration grossesse", author: "Archives départementales de Nice", file: "AD_Declaration_Tourettes.pdf" },
-    { title: "Les Misérables", author: "Victor Hugo", file: "les_miserables.pdf" },
+    { title: "Procès Châtelet", author: "Archives du Châtelet de Paris", file: "Y_10224.pdf" },
     { title: "Cyrano de Bergerac", author: "Edmond Rostand", file: "cyrano_de_bergerac.pdf" },
     // Ajoute plus de livres ici
 ];
